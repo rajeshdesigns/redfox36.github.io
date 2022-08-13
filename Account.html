@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account  - REDFOX | Ecommerce Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+      <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                <img src="images/Picsart_22-07-29_12-19-31-337.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/Cart.png" width="30px" height="30px"></a>
+            <img src="images/Menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        </div>
+        <!-----------Acccount Page------------>
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="photos/images (21).jpeg" width="70%">
+                    </div>
+
+                    <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Log-In</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LogInForm">
+                            <input type="text" placeholder="Username">
+                            <input type="Password" placeholder="Password">
+                            <button type="submit" class="btn">Log-In</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="Password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!------footer--------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-8">
+                <h3>Download our app</h3>
+                <p>Download our App for Andriod IOS compatible.</p>
+                <div class="app-logo">
+                    <img src="images/Picasrt google and ios.png">
+                </div>
+            </div>
+            <div class="footer-col-9">
+                <img src="images/Redfox logo white.png">
+                <p>Our Purpose is to sell the products with offordable cost with fullest satisfaction.</p>
+            </div>
+        <div class="footer-col-10">
+            <h3>Follow Us On</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+            </ul>
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - <b>RAJESHKANTH DESIGNS</b></p>
+    </div>
+</div>
+
+<!----------------js toggle menu--------------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if( MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+<!---------JS for toggle form------------>
+<script>
+    var LogInForm = document.getElementById("LogInForm")
+    var RegForm = document.getElementById("RegForm")
+    var Indicator = document.getElementById("Indicator")
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LogInForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LogInForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+
+
+</script>
+
+
+</body>
+</html>

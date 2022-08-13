@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart - REDFOX | Ecommerce Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+      <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                <img src="images/Picsart_22-07-29_12-19-31-337.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/Cart.png" width="30px" height="30px">
+            <img src="images/Menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        </div>
+
+<!------------cart items details------------>
+<div class="small-container" class="cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Sub Total</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/Goggle.jpeg">
+                    <div>
+                        <p>100% Dirt Bike Goggle</p>
+                        <small>Price: Rs.700</small><br>
+                        <a href=""><b>REMOVE </b></a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rs.700</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/air-neon1.jpg">
+                    <div>
+                        <p>RYNOX Air Neon Gloves</p>
+                        <small>Price: Rs.1100</small><br>
+                        <a href=""><b>REMOVE </b></a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rs.1100</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/mobile-stand-with-charger-grover-original-imagfnf8yp3fybzg.jpeg">
+                    <div>
+                        <p>Mobile Stand Holder for bikes</p>
+                        <small>Price: Rs.800</small><br>
+                        <a href=""><b>REMOVE</b></a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rs.800</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>SubTotal</td>
+                <td>Rs.2600.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>Rs.312.00</td>
+            </tr>
+            <tr>
+                <td><b>Total</b></td>
+                <td><b>Rs.2912.00</b></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!------footer--------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-8">
+                <h3>Download our app</h3>
+                <p>Download our App for Andriod IOS compatible.</p>
+                <div class="app-logo">
+                    <img src="images/Picasrt google and ios.png">
+                </div>
+            </div>
+            <div class="footer-col-9">
+                <img src="images/Redfox logo white.png">
+                <p>Our Purpose is to sell the products with offordable cost with fullest satisfaction.</p>
+            </div>
+        <div class="footer-col-10">
+            <h3>Follow Us On</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+            </ul>
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - <b>RAJESHKANTH DESIGNS</b></p>
+    </div>
+</div>
+
+<!----------------js toggle menu--------------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if( MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+
+
+</body>
+</html>
